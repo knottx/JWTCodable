@@ -10,6 +10,8 @@ import Foundation
 
 public class JWTDecoder {
     
+    public static let shared = JWTDecoder()
+    
     public func decodeDict(jwtToken: String) -> [String: Any] {
         let segments = jwtToken.components(separatedBy: ".")
         var dict: [String: Any] = [:]
