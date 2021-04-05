@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "JWTCodable"
+  spec.name         = "JWTEncoder"
   spec.version      = "1.2.0"
-  spec.summary      = "JSON Web Tokens Codable framework for iOS in swift"
+  spec.summary      = "JSON Web Tokens Encoder framework for iOS in swift"
 
   spec.homepage     = "https://github.com/knottx/JWTCodable"
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   
   spec.swift_version   = "5.1"
   spec.ios.deployment_target = "10.0"
-  spec.source_files  = "JWTCodable/**/*.swift"
+  spec.source_files  = "JWTCodable/JWTEncoder/**/*.swift", "JWTCodable/Extensions/**/*.swift"
   spec.requires_arc  = true
 
 end

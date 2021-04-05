@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B8F9590261AB328001A159B /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F958D261AB328001A159B /* JWTDecoder.swift */; };
+		8B8F9591261AB328001A159B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F958E261AB328001A159B /* Extensions.swift */; };
+		8B8F9592261AB328001A159B /* JWTDecoderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F958F261AB328001A159B /* JWTDecoderModels.swift */; };
+		8B8F9596261AB415001A159B /* JWTEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F9595261AB415001A159B /* JWTEncoder.swift */; };
 		8B99209C261AAF0100DC4224 /* JWTCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B992092261AAF0100DC4224 /* JWTCodable.framework */; };
 		8B9920A1261AAF0100DC4224 /* JWTCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9920A0261AAF0100DC4224 /* JWTCodableTests.swift */; };
-		8B9920A3261AAF0100DC4224 /* JWTCodable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B992095261AAF0100DC4224 /* JWTCodable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,8 +26,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B8F958D261AB328001A159B /* JWTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		8B8F958E261AB328001A159B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8B8F958F261AB328001A159B /* JWTDecoderModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoderModels.swift; sourceTree = "<group>"; };
+		8B8F9595261AB415001A159B /* JWTEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTEncoder.swift; sourceTree = "<group>"; };
 		8B992092261AAF0100DC4224 /* JWTCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWTCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B992095261AAF0100DC4224 /* JWTCodable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JWTCodable.h; sourceTree = "<group>"; };
 		8B992096261AAF0100DC4224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B99209B261AAF0100DC4224 /* JWTCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWTCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B9920A0261AAF0100DC4224 /* JWTCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTCodableTests.swift; sourceTree = "<group>"; };
@@ -50,6 +56,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B8F958B261AB303001A159B /* JWTDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F958D261AB328001A159B /* JWTDecoder.swift */,
+				8B8F958F261AB328001A159B /* JWTDecoderModels.swift */,
+			);
+			path = JWTDecoder;
+			sourceTree = "<group>";
+		};
+		8B8F958C261AB310001A159B /* JWTEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F9595261AB415001A159B /* JWTEncoder.swift */,
+			);
+			path = JWTEncoder;
+			sourceTree = "<group>";
+		};
+		8B8F959B261AB4D6001A159B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F958E261AB328001A159B /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8B992088261AAF0100DC4224 = {
 			isa = PBXGroup;
 			children = (
@@ -71,8 +102,10 @@
 		8B992094261AAF0100DC4224 /* JWTCodable */ = {
 			isa = PBXGroup;
 			children = (
-				8B992095261AAF0100DC4224 /* JWTCodable.h */,
+				8B8F959B261AB4D6001A159B /* Extensions */,
 				8B992096261AAF0100DC4224 /* Info.plist */,
+				8B8F958B261AB303001A159B /* JWTDecoder */,
+				8B8F958C261AB310001A159B /* JWTEncoder */,
 			);
 			path = JWTCodable;
 			sourceTree = "<group>";
@@ -93,7 +126,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B9920A3261AAF0100DC4224 /* JWTCodable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +179,7 @@
 				TargetAttributes = {
 					8B992091261AAF0100DC4224 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					8B99209A261AAF0100DC4224 = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8F9596261AB415001A159B /* JWTEncoder.swift in Sources */,
+				8B8F9591261AB328001A159B /* Extensions.swift in Sources */,
+				8B8F9592261AB328001A159B /* JWTDecoderModels.swift in Sources */,
+				8B8F9590261AB328001A159B /* JWTDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 		8B9920A7261AAF0100DC4224 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QSNJ9UDHM7;
@@ -354,9 +392,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.knottx.JWTCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +405,7 @@
 		8B9920A8261AAF0100DC4224 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QSNJ9UDHM7;
@@ -378,6 +419,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.knottx.JWTCodable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -389,6 +431,7 @@
 		8B9920AA261AAF0100DC4224 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSNJ9UDHM7;
 				INFOPLIST_FILE = JWTCodableTests/Info.plist;
@@ -407,6 +450,7 @@
 		8B9920AB261AAF0100DC4224 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QSNJ9UDHM7;
 				INFOPLIST_FILE = JWTCodableTests/Info.plist;
