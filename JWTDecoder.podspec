@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "JWTDecoder"
-  spec.version      = "1.2.0"
+  spec.version      = "1.3.0"
   spec.summary      = "JSON Web Tokens Decoder framework for iOS in swift"
 
   spec.homepage     = "https://github.com/knottx/JWTCodable"
