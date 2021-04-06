@@ -11,7 +11,8 @@ Pod::Spec.new do |spec|
   
   spec.swift_version   = "5.1"
   spec.ios.deployment_target = "10.0"
-  spec.source_files  = "JWTCodable/JWTDecoder/**/*.swift", "JWTCodable/Extensions/**/*.swift"
+  spec.source_files  = "JWTCodable/JWTDecoder/JWTDecoder/**/*.swift", 
+                        "JWTCodable/Extensions/**/*.swift"
   spec.requires_arc  = true
 
 end

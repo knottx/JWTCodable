@@ -2,7 +2,7 @@
 
 ## 📲 Installation
 
-`JWTDecoder` is available on [CocoaPods](https://cocoapods.org/pods/JWTDecoder):
+`JWTDecoder` is available on [CocoaPods](https://cocoapods.org/pods/JWTCodable):
 
 ```ruby
 pod 'JWTDecoder'
