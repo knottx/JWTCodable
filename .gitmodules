@@ -1,0 +1,6 @@
+[submodule "JWTCodable/JWTEncoder"]
+	path = JWTCodable/JWTEncoder
+	url = git@github.com:knottx/JWTEncoder.git
+[submodule "JWTCodable/JWTDecoder"]
+	path = JWTCodable/JWTDecoder
+	url = git@github.com:knottx/JWTDecoder.git

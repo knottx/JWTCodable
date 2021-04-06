@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B8F9590261AB328001A159B /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F958D261AB328001A159B /* JWTDecoder.swift */; };
+		1A903652261C1721003F266D /* JWTDecoderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90363E261C1721003F266D /* JWTDecoderModels.swift */; };
+		1A903653261C1721003F266D /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90363F261C1721003F266D /* JWTDecoder.swift */; };
+		1A903655261C1721003F266D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1A903641261C1721003F266D /* LICENSE */; };
+		1A903656261C1721003F266D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A903645261C1721003F266D /* README.md */; };
+		1A903657261C1721003F266D /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1A903646261C1721003F266D /* .gitignore */; };
 		8B8F9591261AB328001A159B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F958E261AB328001A159B /* Extensions.swift */; };
-		8B8F9592261AB328001A159B /* JWTDecoderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F958F261AB328001A159B /* JWTDecoderModels.swift */; };
 		8B99209C261AAF0100DC4224 /* JWTCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B992092261AAF0100DC4224 /* JWTCodable.framework */; };
 		8B9920A1261AAF0100DC4224 /* JWTCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9920A0261AAF0100DC4224 /* JWTCodableTests.swift */; };
 /* End PBXBuildFile section */
@@ -25,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8B8F958D261AB328001A159B /* JWTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		1A90363E261C1721003F266D /* JWTDecoderModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoderModels.swift; sourceTree = "<group>"; };
+		1A90363F261C1721003F266D /* JWTDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		1A903641261C1721003F266D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1A903645261C1721003F266D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A903646261C1721003F266D /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8B8F958E261AB328001A159B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		8B8F958F261AB328001A159B /* JWTDecoderModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JWTDecoderModels.swift; sourceTree = "<group>"; };
 		8B992092261AAF0100DC4224 /* JWTCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWTCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B992096261AAF0100DC4224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B99209B261AAF0100DC4224 /* JWTCodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JWTCodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,11 +60,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8B8F958B261AB303001A159B /* JWTDecoder */ = {
+		1A90363B261C1721003F266D /* JWTDecoder */ = {
 			isa = PBXGroup;
 			children = (
-				8B8F958D261AB328001A159B /* JWTDecoder.swift */,
-				8B8F958F261AB328001A159B /* JWTDecoderModels.swift */,
+				1A903641261C1721003F266D /* LICENSE */,
+				1A903645261C1721003F266D /* README.md */,
+				1A90363C261C1721003F266D /* JWTDecoder */,
+				1A903646261C1721003F266D /* .gitignore */,
+			);
+			path = JWTDecoder;
+			sourceTree = "<group>";
+		};
+		1A90363C261C1721003F266D /* JWTDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				1A90363E261C1721003F266D /* JWTDecoderModels.swift */,
+				1A90363F261C1721003F266D /* JWTDecoder.swift */,
 			);
 			path = JWTDecoder;
 			sourceTree = "<group>";
@@ -92,9 +109,9 @@
 		8B992094261AAF0100DC4224 /* JWTCodable */ = {
 			isa = PBXGroup;
 			children = (
+				1A90363B261C1721003F266D /* JWTDecoder */,
 				8B8F959B261AB4D6001A159B /* Extensions */,
 				8B992096261AAF0100DC4224 /* Info.plist */,
-				8B8F958B261AB303001A159B /* JWTDecoder */,
 			);
 			path = JWTCodable;
 			sourceTree = "<group>";
@@ -199,6 +216,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A903657261C1721003F266D /* .gitignore in Resources */,
+				1A903656261C1721003F266D /* README.md in Resources */,
+				1A903655261C1721003F266D /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,9 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A903652261C1721003F266D /* JWTDecoderModels.swift in Sources */,
+				1A903653261C1721003F266D /* JWTDecoder.swift in Sources */,
 				8B8F9591261AB328001A159B /* Extensions.swift in Sources */,
-				8B8F9592261AB328001A159B /* JWTDecoderModels.swift in Sources */,
-				8B8F9590261AB328001A159B /* JWTDecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
