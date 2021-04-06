@@ -15,17 +15,25 @@ public class JWTDecoder {
     public func decodeDict(jwtToken: String) -> [String: Any] {
         let segments = jwtToken.components(separatedBy: ".")
         var dict: [String: Any] = [:]
-        if let string = segments.getElement(at: 0),
-           let header = self.decodeJWTPart(string) {
-            dict.updateValue(header, forKey: "header")
+        guard let headerString = segments.getElement(at: 0),
+           let header = self.decodeJWTPart(headerString) else {
+            self.log(JWTError.invalidJWTString.localizedDescription)
+            return [:]
         }
-        if let string = segments.getElement(at: 1),
-           let payload = self.decodeJWTPart(string) {
-            dict.updateValue(payload, forKey: "payload")
+        dict.updateValue(header, forKey: "header")
+        
+        guard let payloadString = segments.getElement(at: 1),
+           let payload = self.decodeJWTPart(payloadString) else {
+            self.log(JWTError.invalidJWTString.localizedDescription)
+            return [:]
         }
-        if let signature = segments.getElement(at: 2) {
-            dict.updateValue(signature, forKey: "signature")
+        dict.updateValue(payload, forKey: "payload")
+        
+        guard let signature = segments.getElement(at: 2) else {
+            self.log(JWTError.invalidJWTString.localizedDescription)
+            return [:]
         }
+        dict.updateValue(signature, forKey: "signature")
         dict.updateValue(jwtToken, forKey: "jwtToken")
         self.log(try? dict.data().asString())
         return dict
@@ -47,7 +55,7 @@ public class JWTDecoder {
 // MARK: - Private
 extension JWTDecoder {
     
-    private func base64UrlDecode(_ value: String) -> Data? {
+    private func base64Decode(_ value: String) -> Data? {
         var base64 = value
             .replacingOccurrences(of: "-", with: "+")
             .replacingOccurrences(of: "_", with: "/")
@@ -62,7 +70,7 @@ extension JWTDecoder {
     }
     
     private func decodeJWTPart(_ value: String) -> [String: Any]? {
-        guard let bodyData = self.base64UrlDecode(value),
+        guard let bodyData = self.base64Decode(value),
               let json = try? JSONSerialization.jsonObject(with: bodyData, options: []),
               let dict = json as? [String: Any] else { return nil }
         return dict
@@ -74,3 +82,5 @@ extension JWTDecoder {
     }
     
 }
+
+

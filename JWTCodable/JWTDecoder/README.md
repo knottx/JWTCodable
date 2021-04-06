@@ -73,12 +73,6 @@ let jwt:JWT? = JWTDecoder.shared.decode(jwtToken: jwtToken, payloadType: Payload
 
 jwt?.header 
 // JWTHeader Object
-
-jwt?.header?.algorithm  
-// decode key "alg" value as String
-
-jwt?.header?.type  
-// decode key "typ" value as String
         
 jwt?.payload  
 // Payload Object
