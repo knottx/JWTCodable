@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A903712261C1C82003F266D /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A903711261C1C82003F266D /* JWTDecoder.swift */; };
+		1A90371B261C1CB9003F266D /* JWTDecoderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A90371A261C1CB9003F266D /* JWTDecoderModels.swift */; };
+		1A90371F261C1D17003F266D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1A90371E261C1D17003F266D /* README.md */; };
 		8B8F9591261AB328001A159B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8F958E261AB328001A159B /* Extensions.swift */; };
 		8B99209C261AAF0100DC4224 /* JWTCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B992092261AAF0100DC4224 /* JWTCodable.framework */; };
 		8B9920A1261AAF0100DC4224 /* JWTCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9920A0261AAF0100DC4224 /* JWTCodableTests.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A903711261C1C82003F266D /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JWTDecoder.swift; path = ../JWTDecoder.swift; sourceTree = "<group>"; };
+		1A90371A261C1CB9003F266D /* JWTDecoderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JWTDecoderModels.swift; path = ../JWTDecoderModels.swift; sourceTree = "<group>"; };
+		1A90371E261C1D17003F266D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8B8F958E261AB328001A159B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8B992092261AAF0100DC4224 /* JWTCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JWTCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B992096261AAF0100DC4224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +56,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A903717261C1C88003F266D /* JWTDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				1A903722261C1D29003F266D /* New Group */,
+				1A90371E261C1D17003F266D /* README.md */,
+			);
+			path = JWTDecoder;
+			sourceTree = "<group>";
+		};
+		1A903722261C1D29003F266D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				1A903711261C1C82003F266D /* JWTDecoder.swift */,
+				1A90371A261C1CB9003F266D /* JWTDecoderModels.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		8B8F959B261AB4D6001A159B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +105,7 @@
 			children = (
 				8B8F959B261AB4D6001A159B /* Extensions */,
 				8B992096261AAF0100DC4224 /* Info.plist */,
+				1A903717261C1C88003F266D /* JWTDecoder */,
 			);
 			path = JWTCodable;
 			sourceTree = "<group>";
@@ -151,6 +176,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = knottx;
 				TargetAttributes = {
 					8B992091261AAF0100DC4224 = {
 						CreatedOnToolsVersion = 12.4;
@@ -185,6 +211,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A90371F261C1D17003F266D /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A903712261C1C82003F266D /* JWTDecoder.swift in Sources */,
+				1A90371B261C1CB9003F266D /* JWTDecoderModels.swift in Sources */,
 				8B8F9591261AB328001A159B /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
