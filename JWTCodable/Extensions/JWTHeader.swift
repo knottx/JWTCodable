@@ -44,6 +44,7 @@ public struct JWTHeader: Codable {
     
     
     public init(typ: String? = "JWT",
+                alg: JWTAlgorithm? = nil,
                 jku: String? = nil,
                 jwk: String? = nil,
                 kid: String? = nil,
@@ -54,7 +55,7 @@ public struct JWTHeader: Codable {
                 cty: String? = nil,
                 crit: [String]? = nil) {
         self.typ = typ
-        self.alg = nil
+        self.alg = alg
         self.jku = jku
         self.jwk = jwk
         self.kid = kid

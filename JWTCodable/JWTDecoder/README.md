@@ -72,17 +72,18 @@ let jwt:JWT? = JWTDecoder.shared.decode(jwtToken: jwtToken, payloadType: Payload
 // JWT<Payload>?
 
 jwt?.header 
-// JWTHeader Object
-        
+// value as object JWTHeader?
+
 jwt?.payload  
-// Payload Object
+// value as object Payload? 
         
 jwt?.signature  
-// signature value as String
+// signature value as String?
         
 jwt?.jwtToken  
-// jwtToken value as String
+// jwtToken value as String?
 ```
+
 
 
 ## 📋 Requirements
