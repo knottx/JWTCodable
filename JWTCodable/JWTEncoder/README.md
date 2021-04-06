@@ -1,8 +1,9 @@
+# JWTEncoder
 **JWTEncoder** is a JSON Web Tokens Encoder framework for iOS in swift.
 
 ## 📲 Installation
 
-`JWTEncoder` is available on [CocoaPods](https://cocoapods.org/pods/JWTCodable):
+`JWTEncoder` is available on [CocoaPods](https://cocoapods.org/pods/JWTEncoder):
 
 ```ruby
 pod 'JWTEncoder'
