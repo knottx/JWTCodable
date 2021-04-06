@@ -9,15 +9,9 @@
 pod 'JWTCodable'
 ```
 
-if you want to use **Decoder** only you can install only `JWTDecoder` [Readme](https://github.com/knottx/JWTCodable/tree/main/JWTCodable/JWTDecoder)
-```ruby
-pod 'JWTDecoder'
-```
+if you want to use `Decoder` only you can install only `JWTDecoder` [Readme](https://github.com/knottx/JWTCodable/tree/main/JWTCodable/JWTDecoder)
 
-if you want to use **Encoder** only you can install only `JWTEncoder` [Readme](https://github.com/knottx/JWTCodable/tree/main/JWTCodable/JWTDecoder)
-```ruby
-pod 'JWTEncoder'
-```
+if you want to use `Encoder` only you can install only `JWTEncoder` [Readme](https://github.com/knottx/JWTCodable/tree/main/JWTCodable/JWTDecoder)
 
 ## 📝 How
 ### Code Implementation
