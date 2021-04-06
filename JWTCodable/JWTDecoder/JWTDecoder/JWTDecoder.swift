@@ -31,13 +31,13 @@ public class JWTDecoder {
         return dict
     }
     
-    public func decode<T: Decodable>(jwtToken: String, payloadType: T.Type) -> DecodedJWT<T>? {
+    public func decode<T: Codable>(jwtToken: String, payloadType: T.Type) -> JWT<T>? {
         let dict = self.decodeDict(jwtToken: jwtToken)
-        guard let obj = try? JSONDecoder().decode(DecodedJWT<T>.self, from: dict.data()) else { return nil }
+        guard let obj = try? JSONDecoder().decode(JWT<T>.self, from: dict.data()) else { return nil }
         return obj
     }
     
-    public func decodePayload<T: Decodable>(jwtToken: String, type: T.Type) -> T? {
+    public func decodePayload<T: Codable>(jwtToken: String, type: T.Type) -> T? {
         let decodedJWT = self.decode(jwtToken: jwtToken, payloadType: type)
         return decodedJWT?.payload
     }

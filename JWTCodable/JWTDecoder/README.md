@@ -47,7 +47,7 @@ HMACSHA256(
 #### Example Payload object
 Create your own Payload object, For example reference from payload JSON
 ```swift
-struct Payload: Decodable {
+struct Payload: Codable {
     var sub: String?
     var name: String?
     var iat: Int?
@@ -68,25 +68,25 @@ let payload:Payload? = JWTDecoder.shared.decodePayload(jwtToken: jwtToken, type:
 
 ### Decode to Object
 ```swift
-let decodedJWT:DecodedJWT? = JWTDecoder.shared.decode(jwtToken: jwtToken, payloadType: Payload.self) 
-// DecodedJWT<Payload>?
+let jwt:JWT? = JWTDecoder.shared.decode(jwtToken: jwtToken, payloadType: Payload.self) 
+// JWT<Payload>?
 
-decodedJWT?.header 
+jwt?.header 
 // JWTHeader Object
 
-decodedJWT?.header?.algorithm  
+jwt?.header?.algorithm  
 // decode key "alg" value as String
 
-decodedJWT?.header?.type  
+jwt?.header?.type  
 // decode key "typ" value as String
         
-decodedJWT?.payload  
+jwt?.payload  
 // Payload Object
         
-decodedJWT?.signature  
+jwt?.signature  
 // signature value as String
         
-decodedJWT?.jwtToken  
+jwt?.jwtToken  
 // jwtToken value as String
 ```
 

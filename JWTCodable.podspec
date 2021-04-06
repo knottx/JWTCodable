@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "JWTCodable"
   spec.version      = "1.3.0"
-  spec.summary      = "JSON Web Tokens Codable framework for iOS in swift"
+  spec.summary      = "JSON Web Tokens Decoder and Encoder framework for iOS in swift"
 
   spec.homepage     = "https://github.com/knottx/JWTCodable"
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
